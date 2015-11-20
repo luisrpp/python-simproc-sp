@@ -10,7 +10,7 @@
 from setuptools import setup
 
 setup(name='PySimprocSP',
-      version='0.1',
+      version='0.2',
       description='Get process details in the Simproc system on the \
            website of the city of São Paulo.',
       url='http://github.com/luisrpp/python-simproc-sp',

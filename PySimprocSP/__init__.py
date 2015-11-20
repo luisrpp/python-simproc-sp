@@ -7,11 +7,6 @@
     Date last modified: 2015-11-20
 """
 
-import requests
-from requests.exceptions import HTTPError
-from parser import SimprocHtmlParser
-from settings import SIMPROC_URL, HTTP_CONNECTION_TIMEOUT
-
 
 def process_details(process_number):
     """
@@ -20,6 +15,10 @@ def process_details(process_number):
     :param process_number: the Simproc process number
     :return: a dictionary with details of the process
     """
+    import requests
+    from requests.exceptions import HTTPError
+    from PySimprocSP.parser import SimprocHtmlParser
+    from PySimprocSP.settings import SIMPROC_URL, HTTP_CONNECTION_TIMEOUT
 
     payload = {
         'numSimproc': process_number,
