@@ -20,6 +20,6 @@ setup(name='PySimprocSP',
       packages=['PySimprocSP'],
       install_requires=[
           'beautifulsoup4==4.4.1',
-          'requests==2.8.1'
+          'requests==2.20.0'
       ],
       zip_safe=False)
